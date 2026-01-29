@@ -45,6 +45,23 @@ for i in range(1, 10):
     print("after continue:", i)
 
 
+
+# enumerate() — используется, когда нужно получить
+# и индекс элемента, и сам элемент одновременно.
+
+fruits = ["apple", "banana", "cherry"]
+
+# Обычный for без enumerate
+for fruit in fruits:
+    print(fruit)
+
+print("-----")
+
+# for с enumerate
+for index, fruit in enumerate(fruits):
+    print("index =", index, ", fruit =", fruit)
+
+
 # Пример с while и input()
 # Раскомментируй для интерактива:
 # while True:
