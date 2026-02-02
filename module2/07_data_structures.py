@@ -16,7 +16,7 @@ print("numbers =", numbers)
 print("names =", names)
 
 # Создание списка через list()
-numbers2 = list([1, 2, 3])
+numbers2 = list("string")
 empty_list = list()
 
 print("numbers2 =", numbers2)
@@ -42,7 +42,7 @@ for n in numbers:
     print("element:", n)
 
 # Удаление элемента по значению
-numbers.remove(25)
+numbers.remove(2)
 print("after remove:", numbers)
 
 # Удаление последнего элемента
@@ -88,7 +88,14 @@ print()
 student = {
     "name": "Dana",
     "age": 19,
-    "city": "Astana"
+    "city": "Astana",
+    "values": [5, 4 ,5 ,6, 1, 6,],
+    "obj": {
+        "name": "Dana",
+        "age": 19,
+        "city": "Astana",
+        "values": [5, 4 ,5 ,6, 1, 6,]
+    }
 }
 
 print("student =", student)
@@ -101,7 +108,7 @@ print("student2 =", student2)
 print("empty_dict =", empty_dict)
 
 # Доступ по ключу
-print("name =", student["name"])
+print("name =", student["vaules"][2])
 print("age =", student["age"])
 
 # Изменение значения
@@ -111,6 +118,20 @@ student["age"] = 20
 student["group"] = "IS-101"
 
 print("student after changes =", student)
+
+
+student = {
+    "name": "Dana",
+    "age": 19,
+    "city": "Astana",
+    "values": [5, 4 ,5 ,6, 1, 6,],
+    "obj": {
+        "name": "Dana",
+        "age": 19,
+        "city": "Astana",
+        "values": [5, 4 ,5 ,6, 1, 6,]
+    }
+}
 
 # Перебор словаря
 for key in student:
@@ -126,6 +147,10 @@ print()
 # Порядок элементов не гарантирован
 
 numbers_set = {1, 2, 3, 3, 2}
+new_set = set(numbers_set)
+
+[1,2,3]
+
 letters = set(["a", "b", "a", "c"])
 empty_set = set()
 

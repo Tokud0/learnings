@@ -7,28 +7,45 @@
 # for используется, когда известно количество повторений.
 # range(n) создает последовательность чисел от 0 до n-1.
 
+range(5)
+
+# [0, 1, 2 ,3 ,4 ,5]
+
 for i in range(5):
     print("i =", i)
 
+# i = 0
+# i = 1 
+....
+# i = 5
 
 # range(start, stop, step)
 for i in range(2, 10, 2):
     print("even i =", i)
+
+# 2 4 6 8 10
+
+range(10, 2, 1)
 
 
 # Частый пример: подсчет суммы
 total = 0
 for i in range(1, 6):
     total += i
+    total = total + i
+    -=
+    *=
+    /=
 print("Сумма чисел от 1 до 5:", total)
 
 
 # while используется, когда повторяем, пока условие True.
 count = 0
 
-while count < 3:
+count = 10
+while count >= 3:
     print("count =", count)
-    count += 1
+    count -= 1
 
 
 # break - немедленно завершает цикл
@@ -42,6 +59,7 @@ for i in range(1, 10):
 for i in range(1, 10):
     if i == 4:
         continue
+        
     print("after continue:", i)
 
 

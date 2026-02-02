@@ -8,11 +8,17 @@ print(10 + 5)
 
 name = "Alex"
 age = 20
+
 print("Name:", name, "Age:", age)
 
 # print() может управлять разделителем и окончанием строки
-print("A", "B", "C", sep=", ")
+print("A", "B", "C", sep=", ") # A B C
+# A, B, C
+
 print("Line 1", end=" | ")
+# Line 1 |
+
+
 print("Line 2")
 
 print()  # пустая строка

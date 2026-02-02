@@ -61,13 +61,13 @@ print("Оценка:", grade)
 age = 19
 has_ticket = True
 
-if age >= 18 and has_ticket:
+if age >= 18 or has_ticket:
     print("Вход разрешен")
 else:
     print("Вход запрещен")
 
 
-is_admin = False
+is_admin = True
 
 if not is_admin:
     print("Обычный пользователь")
